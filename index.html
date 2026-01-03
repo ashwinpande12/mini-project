@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favourite Festival - Holi</title>
+
+    <style>
+        body{
+            background: linear-gradient(to bottom, #ffe3f3, #fff8ff);
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Navigation bar */
+        nav{
+            background: #d1006c;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover{
+            background: white;
+            color: #d1006c;
+            border-radius: 8px;
+        }
+
+        /* Link colors */
+        a:link{ color: blue; }
+        a:visited{ color: purple; }
+        a:active{ color: red; }
+
+        h1{
+            text-align: center;
+            color: #d1006c;
+            font-size: 45px;
+            padding: 20px;
+            text-shadow: 3px 3px 5px #ffa5d4;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2{
+            color: #c70082;
+            text-align: center;
+            margin-top: 25px;
+            font-size: 30px;
+            text-shadow: 1px 1px 3px #ffc4e4;
+        }
+
+        p{
+            font-size: 18px;
+            padding: 0 30px;
+            text-align: justify;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        /* Fade animation */
+        @keyframes fadeIn{
+            from{ opacity: 0; }
+            to{ opacity: 1; }
+        }
+
+        /* Centering section */
+        .center{
+            text-align: center;
+        }
+
+        /* GIF Section Center Fix */
+        .gif-section{
+            text-align: center;
+        }
+        .gif-section img{
+            width: 300px;
+            border-radius: 15px;
+            margin: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform .2s;
+            display: inline-block;
+        }
+        .gif-section img:hover{
+            transform: scale(1.09);
+        }
+
+        /* Gallery Grid */
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform .3s;
+        }
+        .gallery img:hover{
+            transform: scale(1.1);
+        }
+
+        /* Video center fix */
+        video{
+            width: 90%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Holi</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#video">Video</a>
+    <a href="#gifs">GIFs</a>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home">
+    <h1>My Favourite Festival – Holi</h1>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <h2>🌸 What is Holi?</h2>
+    <p>
+        Holi is one of the most joyful and vibrant festivals of India, known as the “Festival of Colours”.
+        It is celebrated in March and marks the arrival of spring. Holi symbolizes love, unity, positivity,
+        and the victory of good over evil.
+    </p>
+
+    <p>
+        People celebrate Holi by applying colours, dancing, singing, and enjoying sweets like Gujiya.
+        On the night before Holi, “Holika Dahan” is performed which represents the burning of negativity.
+    </p>
+</section>
+
+<!-- CLICKABLE IMAGE LINK CENTERED -->
+<div class="center">
+    <h2>🌈 Click to View Holi Image</h2>
+    <a href="https://www.youtube.com/watch?v=0WtRNGubWGA" target="_blank">
+        Open Holi Image
+    </a>
+</div>
+
+<!-- GIF SECTION CENTERED -->
+<section id="gifs">
+    <h2>✨ Holi GIFs</h2>
+    <div class="gif-section">
+        <img src="https://i.pinimg.com/originals/77/5a/6a/775a6a246695b4eae971fb785531981f.gif">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUya3E4NmNkdDJ2ZXNpeXAwYTNxZnppN2p0cGljZXFnZ2Ftd3J1aTI2MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ui7pQjR911F8sToKR2/200w.gif">
+        <img src="https://cdn.dribbble.com/userupload/35932399/file/original-39a8cd1ea7fdb207ac277df4a5106b5d.gif">
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>📸 Holi Photo Gallery</h2>
+    <div class="gallery">
+
+        <img src="https://media.istockphoto.com/id/473534924/photo/friends-celebrating-holi-festival-in-india.jpg?s=612x612&w=0&k=20&c=It5F74nPO3ZiHAPzyASqNLtuYWpzAK1EW2EttiPeA4M=">
+        <img src="https://www.thehawk.in/_next/image?url=https%3A%2F%2Fd2py10ayqu2jji.cloudfront.net%2F49a1a259-543d-402a-86dc-2bce16f7f5fc%2Fholika-dahan-9a8133de-503b-4334-bd89-24d3fce0225b.avif&w=3840&q=75">
+        <img src="https://img.freepik.com/premium-photo/happy-holika-dahan-card-with-large-bonfire-full-moon-background_1102-12563.jpg">
+        <img src="https://t3.ftcdn.net/jpg/11/09/18/88/360_F_1109188885_HysSz8phUq5pQgg2NrrXirdSAt1ZbxAE.jpg">
+
+        <img src="https://i.natgeofe.com/k/aa3a7720-96bd-4bb7-b765-226d052b354e/holi-kids-in-circle_3x2.jpg">
+        <img src="https://c.ndtvimg.com/2025-03/3mph0ehs_holi-celebration_160x120_14_March_25.jpg">
+        <img src="https://static.vecteezy.com/system/resources/previews/055/876/645/non_2x/this-children-are-splashing-colors-and-water-enthusiastically-during-the-holi-festival-celebration-photo.jpg">
+        <img src="https://media.istockphoto.com/id/1381030718/photo/barsana-holi-one-of-the-most-joyful-festival-of-india-this-is-birth-place-of-radha-lord.jpg?s=612x612&w=0&k=20&c=c0kcjHpSFJXg7F4D6s8Ez-7RWY3MjoIrwsiRQKScank=">
+
+        <img src="https://sc0.blr1.digitaloceanspaces.com/inline/917404-rkwselpzni-1553159237.jpg">
+        <img src="https://c.files.bbci.co.uk/2E51/production/_128875811_holiepa.jpg">
+        <img src="https://cdnblog.picsart.com/2021/03/What-Are-the-Colors-of-Holi-.jpg?to=max&r=700&type=webp">
+        <img src="https://media.gettyimages.com/id/471366604/photo/portrait-of-indian-woman-with-colored-face-dancing-during-holi.jpg?s=612x612&w=gi&k=20&c=HK2zRPm0KJBKUVFuaKan3uSwTv1s816wH3CcqEip5a0=">
+
+    </div>
+</section>
+
+</body>
+</html>
